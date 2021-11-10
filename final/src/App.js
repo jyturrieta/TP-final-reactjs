@@ -4,7 +4,7 @@ import Buscador from './components/Buscador';
 
 function App() {
   
-  const[ciudad,setCiudad] = useState('');
+  const[ciudad,setCiudad] = useState({});
 
   const consultarAPI = async (e) => {
       try{
