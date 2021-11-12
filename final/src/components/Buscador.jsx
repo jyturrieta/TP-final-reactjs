@@ -4,14 +4,15 @@ import React from 'react';
 const Buscador = props => {
     return ( 
 
-        <div className="card card-body">
+        <div className="">
             <form onSubmit={props.consultarAPI}>
-                <div className="form-group">
-                    <input type="text" name="ciudad" placeholder="Ingrese una ciudad" className="form-control" autoFocus>
+                <div className="d-flex justify-content-center flex-column ">
+                    <input type="text" name="ciudad" placeholder="Ingrese una ciudad" className="rounded" >
 
                     </input>
+                    <button className="btn btn-danger ">Buscar</button>
                 </div>
-                <button className="btn btn-info btn-block">Buscar</button>
+                
             </form>
         </div>
 

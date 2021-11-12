@@ -1,13 +1,35 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.fondo{
+  background-size: cover;
+  background-position: bottom ;
+  transition: 0.4 ease;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.fondo.soleadodia{
+  background-image: url(assets/soleado-dia.jpg);
+}
+
+.fondo.soleadonoche{
+  background-image: url(assets/soleado-noche.jpg);
+}
+
+.fondo.nubladodia{
+  background-image: url(assets/nublado-dia.jpg);
+}
+.fondo.nubladonoche{
+  background-image: url(assets/nublado-noche.jpg);
+}
+.fondo.lluviadia{
+  background-image: url(assets/lluvia-dia.jpg);
+}
+.fondo.lluvianoche{
+  background-image: url(assets/lluvia-noche.jpg);
+}
+.fondo.niebladia{
+  background-image: url(assets/niebla-dia.jpg);
+}
+.fondo.nieblanoche{
+  background-image: url(assets/niebla-noche.jpg);
+}
+.fondo.nieve{
+  background-image: url(assets/nieve-dia.jpg)
 }
