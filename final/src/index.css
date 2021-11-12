@@ -2,6 +2,7 @@
   background-size: cover;
   background-position: bottom ;
   transition: 0.4 ease;
+  background-image: url(assets/bg-main.jpg)
 }
 
 .fondo.soleadodia{
@@ -33,3 +34,27 @@
 .fondo.nieve{
   background-image: url(assets/nieve-dia.jpg)
 }
+.climainfo{
+  background-color: rgba(0, 0,0, 0.25)
+}
+
+.buscador{
+  border: 0;
+  opacity: 75%;
+}
+
+.climacuadro{
+  display: flex;
+  justify-content: end;
+  padding: 32px;
+}
+
+.temperatura{
+  size: 32px;
+}
+
+.btn{
+  color: black;
+  background-color: #fdfd96;
+}
+

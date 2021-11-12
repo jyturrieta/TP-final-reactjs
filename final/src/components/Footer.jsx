@@ -5,8 +5,8 @@ import React, { Fragment } from 'react';
 const Footer = () => {
     return (
         <Fragment>
-        <footer class="bg-warning d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top px-5 mt-5">
-          <p class="col-md-4 mb-0 text-muted">© Weather Report</p>
+        <footer class="bg-warning d-flex flex-wrap justify-content-between align-items-center p-2">
+          <p class="col-md-4 mb-0 text-muted ">© Weather Report</p>
   
           <a
             href="/"
