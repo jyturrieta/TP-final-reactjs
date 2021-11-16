@@ -10,7 +10,7 @@ function App() {
   const [main, setMain] = useState([]);
   const [clima, setClima] = useState([]);
   const [sys, setSys] = useState([]);
-
+  const [mostrar, setMostrar] = useState([]);
   const consultarAPI = async (e) => {
     try {
       e.preventDefault();
@@ -26,6 +26,8 @@ function App() {
       setSys(datos.sys)
 
       console.log(datos);
+      setMostrar(mostrar);
+      var mostrar = true;
     } catch (error) {
       alert("Ingrese una ciudad valida");
       console.log(error);
@@ -46,7 +48,7 @@ function App() {
   return (
     <Fragment>
       <div
-        style={{ height: "1080px" }}
+        style={{ height: "100rem" }}
         className={
           despejadodia
             ? "fondo soleadodia"
@@ -77,8 +79,8 @@ function App() {
         <div className="container-md  d-flex justify-content-center flex-column">
           <Buscador consultarAPI={consultarAPI} />
 
-          <div className="climainfo rounded p-2 m-2">
-            <Clima className="" ciudad={ciudad} main={main} clima={clima} sys={sys} />
+          <div className="climainfo rounded p-2 m-2 hidden">
+            <Clima mostrar={mostrar} ciudad={ciudad} main={main} clima={clima} sys={sys} />
           </div>
         </div>
       </div>

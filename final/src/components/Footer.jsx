@@ -5,7 +5,7 @@ import React, { Fragment } from 'react';
 const Footer = () => {
     return (
         <Fragment>
-        <footer class="bg-warning d-flex flex-wrap justify-content-between align-items-center p-2">
+        <footer class="bg-dark d-flex flex-wrap justify-content-between align-items-center p-2 ">
           <p class="col-md-4 mb-0 text-muted ">© Weather Report</p>
   
           <a
@@ -29,7 +29,7 @@ const Footer = () => {
               </a>
             </li>
             <li class="nav-item">
-              <a href="https://github.com/jyturrieta/TP-final-reactjs" class="nav-link px-2 text-muted">
+              <a href="https://github.com/jyturrieta/TP-final-reactjs" class="nav-link px-2  text-muted">
                 GitHub
               </a>
             </li>

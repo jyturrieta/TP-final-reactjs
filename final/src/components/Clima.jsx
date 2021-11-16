@@ -1,11 +1,12 @@
 import React, { Fragment } from "react";
 import "../index.css"
 
-const Clima = ({ ciudad, main, clima, sys}) => {
+const Clima = ({ ciudad, main, clima, sys, mostrar}) => {
   const linkIcono = `https://openweathermap.org/img/wn/${clima.icon}@2x.png`;
 
   return (
     <Fragment>
+      {mostrar ? <p></p>:
         <div className="d-flex flex-column justify-content.between ">
             <div className=" d-flex justify-content-center flex-column climacuadro">
                 <h2 className="text-white display-4 d-flex justify-content-center">{ciudad.name}, {sys.country}</h2>
@@ -15,7 +16,7 @@ const Clima = ({ ciudad, main, clima, sys}) => {
                 <h5 className="text-white display-6 d-flex justify-content-center"> Humedad:{main.humidity}%</h5>
                 <h5 className="text-white display-6 d-flex justify-content-center"> Presión:{main.pressure}hPa</h5>
             </div>
-        </div>
+        </div>}
     </Fragment>
   );
 };
