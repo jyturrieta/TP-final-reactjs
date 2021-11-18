@@ -4,6 +4,7 @@ import Buscador from "./components/Buscador";
 import "./index.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import swal from "sweetalert";
 
 function App() {
   const [ciudad, setCiudad] = useState([]);
@@ -29,7 +30,7 @@ function App() {
       setMostrar(mostrar);
       var mostrar = true;
     } catch (error) {
-      alert("Ingrese una ciudad valida");
+      swal("Ingrese una ciudad valida", "La ciudad ingresada no existe", "error");
       console.log(error);
     }
   };

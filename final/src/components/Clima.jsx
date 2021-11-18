@@ -13,8 +13,8 @@ const Clima = ({ ciudad, main, clima, sys, mostrar}) => {
                 <h2 className="text-white display 3 d-flex justify-content-center align-items-center">{clima.description}<img src={linkIcono} alt="" /></h2>
                 <h3 className="text-white display-1 d-flex justify-content-center temperatura">{Math.round(main.temp)}°c</h3>
                 <h5 className="text-white display-6 d-flex justify-content-center"> Sensación Térmica: {Math.round(main.temp)}°c</h5>
-                <h5 className="text-white display-6 d-flex justify-content-center"> Humedad:{main.humidity}%</h5>
-                <h5 className="text-white display-6 d-flex justify-content-center"> Presión:{main.pressure}hPa</h5>
+                <h5 className="text-white display-6 d-flex justify-content-center"> Humedad: {main.humidity}%</h5>
+                <h5 className="text-white display-6 d-flex justify-content-center"> Presión: {main.pressure}hPa</h5>
             </div>
         </div>}
     </Fragment>
